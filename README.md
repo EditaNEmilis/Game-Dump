@@ -5,6 +5,7 @@ Basically freebies dumpster for goods.
 
 * Clickteam Fusion
 * LÖVE
+* Polytoria
 * RANGE Engine
 * Roblox
 * Source
