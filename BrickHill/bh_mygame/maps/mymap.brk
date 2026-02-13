@@ -1,0 +1,38 @@
+B R I C K  W O R K S H O P  V0.2.0.0
+
+0 0 0
+0.14 0.51 0.20 1
+0.49 0.70 0.90
+100
+400
+
+-50 -5 0 100 14 1 0.30 0.32 0.34 1
+	+NAME Road
+-50 9 0 100 3 1.50 0.46 0.48 0.49 1
+	+NAME SideRoad
+-50 -8 0 100 3 1.50 0.46 0.48 0.49 1
+	+NAME SideRoad
+-16 -2 -4 4 4 1 0.87 0 0.05 1
+	+NAME ScriptBrick
+	+ROT 180
+	+SCRIPT global.MAX_TIME = 20;
+	+SCRIPT global.TIME = 0;
+	+SCRIPT 
+	+SCRIPT script = '
+	+SCRIPT if(global.TIME > 0) {
+	+SCRIPT if(global.TIME == 20) {
+	+SCRIPT messageAll("The minigame has started!");
+	+SCRIPT with obj_client {playerRespawn(id);}
+	+SCRIPT }
+	+SCRIPT topPrintAll(string(global.TIME)+" seconds remaining",1);
+	+SCRIPT global.TIME -= 1;
+	+SCRIPT schedule(1000,script);
+	+SCRIPT } else {
+	+SCRIPT messageAll("The minigame is over!");
+	+SCRIPT messageAll("Restarting in 10 seconds...");
+	+SCRIPT global.TIME = global.MAX_TIME;
+	+SCRIPT schedule(10000,script);
+	+SCRIPT }
+	+SCRIPT ';
+	+SCRIPT execute_string(script);
+
