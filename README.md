@@ -12,7 +12,7 @@ Also contains sub folders like other games, dates and so on.
 * Polytoria
 * RANGE Engine (BGE fork)
 * Roblox
-* Source (SDK, etc..)
+* Source (SDK [06 / 07 / 13], etc..)
 * UPBGE Engine (BGE fork)
 
-BUT some of the games might be not finished.
+BUT some of the games in this repo might be not finished or buggy.
