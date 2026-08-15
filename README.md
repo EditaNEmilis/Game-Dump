@@ -9,6 +9,7 @@ Also contains sub folders like other games, dates and so on.
 * Armory3D
 * Brick Hill
 * Clickteam Fusion (MFA, HTML and SWF)
+* Flash
 * LÖVE
 * Polytoria
 * RANGE Engine (BGE fork)
